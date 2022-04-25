@@ -4,7 +4,9 @@
 }
 html,
 body {
+  
   position: relative;
+  
 }
 
 body {
@@ -22,13 +24,15 @@ a {
 footer {
   background: #f1f1f1;
   width: 100%;
-  padding: 16px 0px;
+  padding-top:10px;
+  padding-bottom: 20px;
   color: #999;
   vertical-align: bottom;
   margin-top: 40px;
   text-align: center;
-  /* width: 100%; */
-  /* height: 2.5rem;   */
+  width: 100%; 
+  height: 2.5rem; 
+ 
 }
 
 .banner {
@@ -51,14 +55,18 @@ footer {
 .tile {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  
 }
 .tile img {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  
 }
 .tile img:hover {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
+  border: 2px solid chartreuse;
+  
 }
 
 /* Hint: Notice the position:absolute and z-index properties. */
@@ -78,22 +86,45 @@ footer {
   /* TODO: MODULE_LAYOUT */
   /* 1. Set a specific height. */
   /* 2. Position and center the image to scale nicely on all screens. */
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-subheading {
   font-size: 24px;
   font-weight: 100;
+  color: white;
+  
 }
 .hero-input {
-  width: 80%;
+  width: 100%;
   height: 50px;
   padding: 16px;
   border-radius: 8px;
   border: none;
 }
 
+.hero-input:hover, .hero-input:focus {
+  border: 1.5px solid #009688;
+  background-color: white;
+}
+
 .nav-link {
   margin-right: 36px;
+}
+ul{
+  list-style-type: none;
+}
+li{
+  float: left;
+}
+header{
+font-weight: bold;
+}
+.topnav a:hover {
+background-color: #ddd;
+color: 2px solid black;
 }
 
 /* ================================== */
@@ -142,4 +173,5 @@ footer {
     width: 400px;
     position: fixed;
   }
+  
 }
