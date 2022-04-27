@@ -1,12 +1,10 @@
 * {
   margin: 0px;
   padding: 0px;
-}
+} 
 html,
 body {
-  
   position: relative;
-  
 }
 
 body {
@@ -23,16 +21,14 @@ a {
 }
 footer {
   background: #f1f1f1;
-  width: 100%;
-  padding-top:10px;
-  padding-bottom: 20px;
+  width:100%;
+  padding:16px 0px;
   color: #999;
   vertical-align: bottom;
   margin-top: 40px;
   text-align: center;
-  width: 100%; 
-  height: 2.5rem; 
- 
+  width:100%;
+ /* height: 2.5rem;*/
 }
 
 .banner {
@@ -51,22 +47,28 @@ footer {
 /* ================================== */
 /* Layout page CSS */
 /* ================================== */
+.tile  {
+  /* TODO: MODULE_CARDS */
+  /* 1. Fill in the required properties. */
+  height:100%;
+  width: 100%;
+}
 
-.tile {
+.tile-img img {
   /* TODO: MODULE_CARDS */
-  /* 1. Fill in the required properties. */
-  
+  /* 1. Fill in the required properties. */ 
+  width: 100%;
+  height: 100%;
+  border-radius: 1.2rem;
+  transition: transform .1s;
 }
-.tile img {
+
+.tile-img img:hover {
   /* TODO: MODULE_CARDS */
   /* 1. Fill in the required properties. */
-  
-}
-.tile img:hover {
-  /* TODO: MODULE_CARDS */
-  /* 1. Fill in the required properties. */
-  border: 2px solid chartreuse;
-  
+  cursor: pointer;
+  filter: brightness(50%);
+  transform: scale(1.1);
 }
 
 /* Hint: Notice the position:absolute and z-index properties. */
@@ -76,7 +78,18 @@ footer {
   z-index: 1;
   text-transform: uppercase;
   letter-spacing: 2px;
+  color: white;
 }
+
+.tile-img {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  border-radius:1.2rem ;
+  overflow: hidden;
+  height: 100%;
+}
+
 
 .hero-image {
   /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
@@ -101,7 +114,7 @@ footer {
   width: 100%;
   height: 50px;
   padding: 16px;
-  border-radius: 8px;
+  border-radius: 25px;
   border: none;
 }
 
@@ -116,12 +129,14 @@ footer {
 ul{
   list-style-type: none;
 }
+
 li{
   float: left;
 }
 header{
 font-weight: bold;
 }
+
 .topnav a:hover {
 background-color: #ddd;
 color: 2px solid black;
@@ -173,5 +188,4 @@ color: 2px solid black;
     width: 400px;
     position: fixed;
   }
-  
 }
