@@ -100,7 +100,7 @@ footer {
   /* TODO: MODULE_LAYOUT */
   /* 1. Set a specific height. */
   /* 2. Position and center the image to scale nicely on all screens. */
-  height: 50vh;
+  height: 59vh;
   background-position: center;
   background-size: cover;
 }
@@ -171,7 +171,7 @@ color: 2px solid black;
 .adventure-card img:hover {
   /* TODO: MODULE_ADVENTURES_GRID */
   /* 1. Fill in the required properties. */
-  transform: scale(1.1);
+  transform: scale(1);
   transition: transform .1s;
   cursor: pointer;
   filter: brightness(50%);
@@ -184,20 +184,26 @@ color: 2px solid black;
 .adventure-detail-card {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
-  padding: 1rem;
+  width:100%;
 }
 
-.adventure-card-image {
+.adventure-card-image{
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
-  height:100%;
   width:100%;
+  float: bottom;
+  border-radius: 1rem;
+  display: flex;
+  object-fit: cover;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .adventure-card-image:hover {
   /* TODO: MODULE_ADVENTURE_DETAILS */
   /* 1. Fill in the required properties. */
-  transform: scale(1.1);
+  transform: scale(1);
   transition: transform .1s;
   cursor: pointer;
   filter: brightness(50%);
